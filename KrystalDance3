@@ -1,4 +1,4 @@
--- Krystal Dance V3, Made by Hemi (es muy janky)
+--136078657506 gf-- Krystal Dance V3, Made by Hemi (the zoophile)
 if not isfolder("Dances") then 
     makefolder("Dances")
     end
@@ -8,9 +8,9 @@ lol = true
 end
 local sprinting = false 
 local is = game:GetService("InsertService")
-local idleanim = is:LoadLocalAsset("rbxassetid://136078657506707")
-local walkanim = is:LoadLocalAsset("rbxassetid://130213485744288")
-local sprintanim = is:LoadLocalAsset("rbxassetid://119558526211035")
+local idleanim = is:LoadLocalAsset("rbxassetid://131082534135875")
+local walkanim = is:LoadLocalAsset("rbxassetid://108018357044094")
+local sprintanim = is:LoadLocalAsset("rbxassetid://136252471123500")
 local randompart = Instance.new("Part",game:GetService("RunService"))
 local coolparticles = is:LoadLocalAsset("rbxassetid://87299663038091").ParticleAttachment
 coolparticles.Parent = randompart
@@ -19,7 +19,7 @@ local script = Instance.new("LocalScript")
 getgenv().real = true
 local OxideApi = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nitro-GT/Utils/refs/heads/main/OxideApi"))()
 local timeposcur = 0 
-OxideApi.Notification("Krystal Dance V3, Made by Hemi",10)
+OxideApi.Notification("Krystal Dance V3, Made by Hemi (the zoophile)",10)
 local playanother = false
 local playing = false
 local dancing = false
