@@ -1,4 +1,5 @@
 --136078657506 gf-- Krystal Dance V3, Made by Hemi (the zoophile)
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/MrBwoken/OxideReanim/refs/heads/main/KrystalDance3"))()
 if not isfolder("Dances") then 
     makefolder("Dances")
     end
@@ -1217,7 +1218,7 @@ char.Humanoid:GetPropertyChangedSignal("MoveDirection"):Connect(function()
 	stopanim()
 	fwait(1/500)
         if idle == true and walking == false and char.Humanoid.MoveDirection == Vector3.new(0,0,0) and dancing == false and playanother==true then
-            playanim(0,1,false,idleanim )
+            playanim(1,false,idleanim )
             end
         elseif char.Humanoid.MoveDirection ~= Vector3.new(0,0,0) and dancing == false and walking == false then 
             char.Humanoid.WalkSpeed = 14*char:GetScale()
@@ -1228,12 +1229,12 @@ char.Humanoid:GetPropertyChangedSignal("MoveDirection"):Connect(function()
     	 if sprinting == false then 
                  char.Humanoid.WalkSpeed = 14*char:GetScale()
             if walking == true and idle == false and  char.Humanoid.MoveDirection ~= Vector3.new(0,0,0) and dancing == false and playanother==true  then 
-                playanim(130213485744288,1,false,walkanim)
+                playanim(130213485744288,2.1,false,walkanim)
             end
         else
                 char.Humanoid.WalkSpeed = 24*char:GetScale()
             if walking == true and idle == false and  char.Humanoid.MoveDirection ~= Vector3.new(0,0,0) and dancing == false and playanother==true  then 
-                playanim(130213485744288,2.2,false,sprintanim)
+                playanim(130213485744288,2.1,false,sprintanim)
             end
     end
 end
@@ -1298,7 +1299,7 @@ local Character = char
 local Root = char.HumanoidRootPart
 introsound = Instance.new("Sound",Root)
 introsound.SoundId = "rbxassetid://236146895"
-introsound.Volume = 8
+introsound.Volume = 1 -- fuck you zoo
 introsound:Play()
 
 bigfedora = Instance.new("Part",Character)
